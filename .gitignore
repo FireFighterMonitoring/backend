@@ -1,0 +1,26 @@
+# Gradle caches and build directories
+.gradle
+build/
+
+# IDEA
+*.iml
+*.ipr
+*.iws
+# ignore the contents of the .idea folder
+# except for the explicitly mentioned exceptions
+.idea/*
+!.idea/codeStyleSettings.xml
+!.idea/runConfigurations/
+!.idea/fileTemplates/
+
+# Finder and temp files
+*~
+.DS_Store
+*.swp
+
+# Local environment runtime overrides
+application-local.properties
+
+# Local environment integration test overrides
+*/src/integrationTest/resources/application-integrationTest.properties
+application-integrationTest.properties
