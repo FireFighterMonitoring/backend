@@ -30,9 +30,14 @@ public class FireFighterDataService {
         return repository.save(data);
     }
 
-    public Iterable<FireFighterData> load() {
-        log.info("Loading data");
+    @Transactional
+    public Iterable<FireFighterData> loadLatest() {
+        log.info("Loading latest data");
+        Iterable<FireFighterData> data = repository.findLatestData();
 
-        return repository.findAll();
+        log.info("Marking all data as read");
+        repository.markAllRead();
+
+        return data;
     }
 }

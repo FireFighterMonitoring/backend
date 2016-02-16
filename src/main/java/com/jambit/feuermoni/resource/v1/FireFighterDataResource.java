@@ -52,7 +52,7 @@ public class FireFighterDataResource {
     @GET
     @NotNull
     @Valid
-    public Iterable<FireFighterData> load() {
-        return service.load();
+    public Iterable<FireFighterData> loadLatest() {
+        return service.loadLatest();
     }
 }
