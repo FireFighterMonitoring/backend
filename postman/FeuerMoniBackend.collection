@@ -5,6 +5,7 @@
 	"order": [
 		"75694bfd-7dd1-21e8-52b1-c36693cb2cf7",
 		"b0c679ed-4278-e6b2-95f7-47fefaca0d03",
+		"87a574e9-dd06-4b22-3701-65e7d3ff9668",
 		"410352f9-9217-69ec-0e02-b6ce445ec6ae"
 	],
 	"folders": [],
@@ -23,7 +24,7 @@
 			"collectionId": "6181151c-ec0d-e49b-94bd-d2e38a11074e",
 			"data": [],
 			"dataMode": "raw",
-			"name": "Load data",
+			"name": "Load",
 			"description": "",
 			"descriptionFormat": "html",
 			"time": 1455657685694,
@@ -54,6 +55,26 @@
 			"responses": []
 		},
 		{
+			"id": "87a574e9-dd06-4b22-3701-65e7d3ff9668",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "http://localhost:8080/api/v1/data",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1455717654506,
+			"name": "Save NO_DATA",
+			"description": "",
+			"collectionId": "6181151c-ec0d-e49b-94bd-d2e38a11074e",
+			"responses": [],
+			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"status\": \"NO_DATA\"\n}"
+		},
+		{
 			"id": "b0c679ed-4278-e6b2-95f7-47fefaca0d03",
 			"headers": "Content-Type: application/json\nAccept: application/json\n",
 			"url": "http://localhost:8080/api/v1/data",
@@ -66,12 +87,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1455707436287,
-			"name": "Save data",
+			"time": 1455717642837,
+			"name": "Save OK",
 			"description": "",
 			"collectionId": "6181151c-ec0d-e49b-94bd-d2e38a11074e",
 			"responses": [],
-			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"heartRate\": _HEART_RATE_,\n    \"stepCount\": _STEP_COUNT_\n}"
+			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"status\": \"OK\",\n    \"vitalSigns\": {\n        \"heartRate\": _HEART_RATE_,\n        \"stepCount\": _STEP_COUNT_\n    }\n}"
 		}
 	]
 }

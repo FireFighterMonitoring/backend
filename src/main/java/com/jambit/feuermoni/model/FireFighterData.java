@@ -3,7 +3,10 @@ package com.jambit.feuermoni.model;
 
 import java.time.Instant;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -21,6 +24,11 @@ import lombok.ToString;
 @ToString
 public class FireFighterData {
 
+    public enum Status {
+        OK, NO_DATA
+    }
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Setter(AccessLevel.NONE)
@@ -29,10 +37,13 @@ public class FireFighterData {
     @NotNull
     private String ffId;
 
-    private int heartRate;
-
-    private int stepCount;
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
     // in UTC
     private Instant timestamp;
+
+    @Embedded
+    private VitalSigns vitalSigns;
 }
