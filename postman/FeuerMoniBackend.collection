@@ -66,12 +66,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1455657311402,
+			"time": 1455707436287,
 			"name": "Save data",
 			"description": "",
 			"collectionId": "6181151c-ec0d-e49b-94bd-d2e38a11074e",
 			"responses": [],
-			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"heartRate\": _HEART_RATE_\n}"
+			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"heartRate\": _HEART_RATE_,\n    \"stepCount\": _STEP_COUNT_\n}"
 		}
 	]
 }

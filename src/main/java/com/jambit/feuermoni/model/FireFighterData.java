@@ -31,6 +31,8 @@ public class FireFighterData {
 
     private int heartRate;
 
+    private int stepCount;
+
     // in UTC
     private Instant timestamp;
 }
