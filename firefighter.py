@@ -7,7 +7,18 @@ import signal
 import sys
 
 
-host = 'http://localhost:8080/api/v1/data'
+if len(sys.argv) > 1:
+    name = sys.argv[1]
+else:
+    name = '[Moni-K]'
+
+if len(sys.argv) > 2:
+    base = sys.argv[2]
+else:
+    base = 'localhost:8080'
+
+host = 'http://' + base + '/api/v1/data'
+
 statusKey = 'status'
 vitalSignsKey = 'vitalSigns'
 heartRateKey = 'heartRate'
@@ -17,7 +28,7 @@ heartRateStep = 20
 stepCountStep = 1
 
 data = {
-    'ffId': '[Moni-K]',
+    'ffId': name,
     statusKey: 'OK',
     vitalSignsKey: {
         heartRateKey: 80,
