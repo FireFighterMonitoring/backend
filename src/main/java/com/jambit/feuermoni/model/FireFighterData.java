@@ -25,7 +25,7 @@ import lombok.ToString;
 public class FireFighterData {
 
     public enum Status {
-        OK, NO_DATA
+        OK, NO_DATA, DISCONNECTED
     }
 
 

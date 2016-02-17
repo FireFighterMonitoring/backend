@@ -6,6 +6,7 @@
 		"75694bfd-7dd1-21e8-52b1-c36693cb2cf7",
 		"b0c679ed-4278-e6b2-95f7-47fefaca0d03",
 		"87a574e9-dd06-4b22-3701-65e7d3ff9668",
+		"d8e18d17-0255-7fc0-56bf-666ef7efe7ad",
 		"410352f9-9217-69ec-0e02-b6ce445ec6ae"
 	],
 	"folders": [],
@@ -91,6 +92,26 @@
 			"collectionId": "6181151c-ec0d-e49b-94bd-d2e38a11074e",
 			"responses": [],
 			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"status\": \"OK\",\n    \"vitalSigns\": {\n        \"heartRate\": _HEART_RATE_,\n        \"stepCount\": _STEP_COUNT_\n    }\n}"
+		},
+		{
+			"id": "d8e18d17-0255-7fc0-56bf-666ef7efe7ad",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{base_url}}/data",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1455720566658,
+			"name": "Save DISCONNECTED",
+			"description": "",
+			"collectionId": "6181151c-ec0d-e49b-94bd-d2e38a11074e",
+			"responses": [],
+			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"status\": \"DISCONNECTED\"\n}"
 		}
 	]
 }
