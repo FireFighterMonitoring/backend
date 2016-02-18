@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/FireFighterMonitoring/backend.png)](https://travis-ci.org/FireFighterMonitoring/backend)
+
 To build the whole project after checkout:
 
     ./gradlew # linux, osx
@@ -12,3 +14,7 @@ To compile and package the modules without any quality checks:
 Run the application in exploded form:
 
     ./gradlew bootRun
+
+Run the application in packaged form:
+
+    ./gradlew clean && ./run.sh
