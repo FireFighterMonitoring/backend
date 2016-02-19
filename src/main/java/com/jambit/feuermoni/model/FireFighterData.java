@@ -29,7 +29,7 @@ import org.hibernate.validator.constraints.NotBlank;
 public class FireFighterData {
 
     public enum Status {
-        OK, NO_DATA, DISCONNECTED
+        CONNECTED, OK, NO_DATA, DISCONNECTED
     }
 
 
