@@ -72,6 +72,11 @@ bootRun {
     }
 }
 
+task stage {
+    description = 'Task executed by Heroku during deployment (in our case, it does nothing).'
+    group = 'deployment'
+}
+
 dependencies {
     compile 'org.projectlombok:lombok:1.16.6'
     compile 'org.springframework.boot:spring-boot-starter'

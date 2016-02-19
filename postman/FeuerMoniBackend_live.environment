@@ -1,16 +1,16 @@
 {
 	"id": "2887bd49-adb6-dc47-c5e3-b2ed1a4293fa",
-	"name": "FeuerMoniBackend_live",
+	"name": "FeuerMoniBackend_heroku",
 	"values": [
 		{
 			"key": "base_url",
-			"value": "http://192.168.232.112:8080/api/v1",
+			"value": "https://feuer-moni-backend.herokuapp.com/api/v1",
 			"type": "text",
 			"name": "base_url",
 			"enabled": true
 		}
 	],
-	"timestamp": 1455718406477,
+	"timestamp": 1455918597731,
 	"synced": false,
 	"syncedFilename": ""
 }

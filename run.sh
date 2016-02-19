@@ -21,4 +21,4 @@ if [ -f "$LOCAL_CONFIG" ]; then
   SPRING_ARGS="--spring.config.location=$LOCAL_CONFIG"
 fi 
 
-java -jar "$APP_JAR" "$SPRING_ARGS" "$@"
+java $JAVA_OPTS -jar "$APP_JAR" "$SPRING_ARGS" "$@"
