@@ -4,6 +4,7 @@
 	"description": "",
 	"order": [
 		"75694bfd-7dd1-21e8-52b1-c36693cb2cf7",
+		"2870668e-b024-f213-3504-44b16fd65c0c",
 		"b0c679ed-4278-e6b2-95f7-47fefaca0d03",
 		"87a574e9-dd06-4b22-3701-65e7d3ff9668",
 		"d8e18d17-0255-7fc0-56bf-666ef7efe7ad",
@@ -15,6 +16,26 @@
 	"remoteLink": "",
 	"public": false,
 	"requests": [
+		{
+			"id": "2870668e-b024-f213-3504-44b16fd65c0c",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{base_url}}/data",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1455885978338,
+			"name": "Save CONNECTED",
+			"description": "",
+			"collectionId": "6181151c-ec0d-e49b-94bd-d2e38a11074e",
+			"responses": [],
+			"rawModeData": "{\n    \"ffId\": _ID_,\n    \"status\": \"CONNECTED\"\n}"
+		},
 		{
 			"id": "410352f9-9217-69ec-0e02-b6ce445ec6ae",
 			"headers": "Accept: application/json\n",
