@@ -18,3 +18,5 @@ Run the application in exploded form:
 Run the application in packaged form:
 
     ./gradlew clean && ./run.sh
+
+**WARNING**: you need PostgreSQL to run the backend. See [here](src/main/resources/application.properties) for the default settings.
