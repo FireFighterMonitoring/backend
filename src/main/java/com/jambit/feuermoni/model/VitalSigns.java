@@ -15,9 +15,9 @@ import lombok.ToString;
 @ToString
 public class VitalSigns {
 
-    @Min(0)
+    @Min(-1)
     private int heartRate;
 
-    @Min(0)
+    @Min(-1)
     private int stepCount;
 }
