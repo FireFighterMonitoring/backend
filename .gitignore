@@ -24,3 +24,6 @@ application-local.properties
 # Local environment integration test overrides
 */src/integrationTest/resources/application-integrationTest.properties
 application-integrationTest.properties
+
+# Vagrant files
+vagrant/.vagrant/

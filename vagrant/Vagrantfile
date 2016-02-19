@@ -1,0 +1,15 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    config.vm.box = "ubuntu/trusty64"
+    # wordaround for issue 'stdin is not a tty' (https://github.com/mitchellh/vagrant/issues/1673)
+    config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+
+    # hostname, ip
+    config.vm.hostname = "psql-dev"
+    config.vm.network :private_network, ip: "192.168.24.12"
+
+    # install postgres db
+    config.vm.provision :shell, :path => "init.sh"
+end
