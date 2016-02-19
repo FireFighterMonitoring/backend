@@ -15,4 +15,10 @@ if [ ! -f "$APP_JAR" ]; then
   echo
 fi
 
-java -jar "$APP_JAR" "$@"
+LOCAL_CONFIG="$MY_DIR/application-local.properties"
+if [ -f "$LOCAL_CONFIG" ]; then
+  echo "Found $LOCAL_CONFIG"
+  SPRING_ARGS="--spring.config.location=$LOCAL_CONFIG"
+fi 
+
+java -jar "$APP_JAR" "$SPRING_ARGS" "$@"
