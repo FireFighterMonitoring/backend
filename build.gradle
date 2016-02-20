@@ -73,9 +73,11 @@ bootRun {
 }
 
 task stage {
-    description = 'Task executed by Heroku during deployment (in our case, it does nothing).'
+    description = 'Task executed by Heroku during deployment.'
     group = 'deployment'
+    dependsOn(clean, assemble)
 }
+assemble.mustRunAfter(clean)
 
 dependencies {
     compile 'org.projectlombok:lombok:1.16.6'
